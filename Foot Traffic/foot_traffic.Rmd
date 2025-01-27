@@ -72,5 +72,10 @@ table_output
 ```
 
 ```{r}
+install.packages("ggmap")
+library(ggmap)
+library(tidyverse)
 
+foot <- foot |>
+  mutate(fulladdress = paste(street_address, city, region, postal_code, sep=","))
 ```
