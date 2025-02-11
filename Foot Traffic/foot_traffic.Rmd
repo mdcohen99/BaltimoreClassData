@@ -29,6 +29,11 @@ focus <- foot |>
 focus |> 
   count(city) |> 
   arrange(desc(n))
+
+travel <- focus |> 
+  arrange(desc(pct_nvisitor_outside_10mile))
+
+travel
 ```
 
 #Biggest losers
@@ -78,4 +83,24 @@ library(tidyverse)
 
 foot <- foot |>
   mutate(fulladdress = paste(street_address, city, region, postal_code, sep=","))
+```
+
+More experimenting...
+
+```{r}
+baltimore_focus <- foot |>
+  filter(city == "Baltimore")
+
+baltimore_losers <- baltimore_focus |>
+  select(location_name, street_address, dln_visits_yoy, start) |> 
+  filter(start > "2024-03-02") |> 
+  slice_min(dln_visits_yoy, n = 20)
+```
+
+```{r}
+geocode <- read_csv("foot_traffic_geocode_lookup.csv")
+```
+
+```{r}
+
 ```
