@@ -24,7 +24,7 @@ Dundalk zip code 21222 Edgemere 21219, 21052 Brandon Shores 21226
 ```{r}
 #1022 results
 focus <- foot |> 
-  filter(postal_code == c("21222", "21219","21052", "21226"))
+  filter(postal_code == c("21225", "21226","21060", "21061", "21090", "21122"))
 
 focus |> 
   count(city) |> 
@@ -42,7 +42,7 @@ travel
 loser <- focus |> 
   select(location_name, street_address, dln_visits_yoy, start) |> 
   filter(start > "2024-03-02") |> 
-  slice_min(dln_visits_yoy, n = 20)
+ arrange(dln_visits_yoy)
 
 
 winners <- focus |>
@@ -50,8 +50,12 @@ winners <- focus |>
   filter(start > "2024-03-02") |> 
   filter(dln_visits_yoy > 0) |>
   arrange(desc(dln_visits_yoy))
-  
-show(winners)
+
+foot <- foot |>
+  select(location_name, street_address, dln_visits_yoy, start) |> 
+  filter(start > "2024-03-02") |> 
+  arrange(dln_visits_yoy)
+
 ```
 
 # Table
