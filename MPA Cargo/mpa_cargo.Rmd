@@ -13,7 +13,7 @@ library(lubridate)
 mpa_cargo <- read_csv("mpa_data.csv") |> 
   clean_names() |> 
   mutate(
-    month = parse_date_time(month, orders = c("ymd", "mdy", "dmy")),  # Auto-detect format
+    month = parse_date_time(month, orders = c("ymd", "mdy", "dmy")),
     container_tons = as.numeric(container_tons),
     auto_tons = as.numeric(auto_tons)
   )
