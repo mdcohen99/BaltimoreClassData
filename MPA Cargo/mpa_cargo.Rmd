@@ -7,6 +7,8 @@ authory: Matt Cohen
 library(tidyverse)
 library(janitor)
 library(lubridate)
+install.packages("leaflet")
+library(leaflet)
 ```
 
 ```{r}
@@ -31,4 +33,7 @@ cargo_data <- ggplot(mpa_cargo, aes(x = month)) +
   theme_minimal()
 
 print(cargo_data)
+```
+
+```{r}
 ```
