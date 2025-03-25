@@ -1,0 +1,31 @@
+---
+title: "Unemployment Data Analysis"
+author: Matt Cohen
+---
+
+```{r}
+library(DatawRappr)
+library(tidyverse)
+datawrapper_auth(api_key =  "67xBMLpa6Nv7wcGVQYlj6WVf5KMeLwGlWgQUKaYWpNQElwbJ9FvSMnDrZrmlJpLL", overwrite=TRUE)
+library(janitor)
+library(lubridate)
+
+```
+
+```{r}
+ui_data <- read_csv("ui_data.csv") |> clean_names()
+```
+
+```{r}
+ui_data |>
+  group_by(zip) |>
+  summarize(count = sum(count)) |>
+  arrange(desc(count))
+```
+
+```{r}
+map <- dw_create_choropleth_map(
+  title="d3-maps-choropleth"
+)
+```
+
