@@ -73,7 +73,11 @@ dw_edit_chart(bar_chart,
               visualize = list(
                 "base-color" = "beige",
                 "thick" = "true",
-                "value-label-alignment" = "right"
+                "sort-bars" = "true",
+                "value-label-alignment" = "right",
+                "rules" = "true",
+                "background" = "true",
+                "block-labels" = "true"
                 )
               )
 ```
