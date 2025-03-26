@@ -74,10 +74,7 @@ dw_edit_chart(bar_chart,
                 "base-color" = "beige",
                 "thick" = "true",
                 "sort-bars" = "true",
-                "value-label-alignment" = "right",
-                "rules" = "true",
-                "background" = "true",
-                "block-labels" = "true"
+                "value-label-alignment" = "right"
                 )
               )
 ```
