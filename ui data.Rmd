@@ -9,6 +9,7 @@ library(tidyverse)
 datawrapper_auth(api_key =  "67xBMLpa6Nv7wcGVQYlj6WVf5KMeLwGlWgQUKaYWpNQElwbJ9FvSMnDrZrmlJpLL", overwrite=TRUE)
 library(janitor)
 library(lubridate)
+library(htmltools)
 
 ```
 
@@ -17,6 +18,7 @@ ui_data <- read_csv("ui_data.csv") |> clean_names()
 ```
 ```{r}
 ui_data$zip <- as.character(ui_data$zip)
+ui_data$month <- as.character(ui_data$month)
 ```
 
 
@@ -59,12 +61,17 @@ dw_publish_chart(map)
 ```
 
 ```{r}
-#install.packages("htmltools")
-library(htmltools)
+iframe_code <- '<iframe src="https://datawrapper.dwcdn.net/Jhbsf/1/" width="100%" height="400" style="border: none;"></iframe>'
+HTML(iframe_code)
 ```
 
 ```{r}
-iframe_code <- '<iframe src="https://datawrapper.dwcdn.net/Jhbsf/1/" width="100%" height="400" style="border: none;"></iframe>'
-HTML(iframe_code)
+ui_months <- ui_data |> 
+  group_by(month) |>
+  summarize(total = count) |>
+  arrange(desc(count))
+
+bar_chart <- dw_create_chart(type="d3-bars",
+  title="Unemployment by month")
 ```
 
