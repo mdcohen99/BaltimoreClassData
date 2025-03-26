@@ -1,0 +1,80 @@
+---
+title: "Baltimore unemployment data"
+name: "Matt Cohen
+---
+
+```{r}
+library(DatawRappr)
+datawrapper_auth(api_key =  "67xBMLpa6Nv7wcGVQYlj6WVf5KMeLwGlWgQUKaYWpNQElwbJ9FvSMnDrZrmlJpLL", overwrite=TRUE)
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(htmltools)
+```
+
+```{r}
+employment <- read_csv("ui_data.csv") |> clean_names()
+```
+
+```{r}
+employment$zip <- as.character(employment$zip)
+employment$month <- as.character(employment$month)
+```
+
+```{r}
+byzip <- employment |>
+  group_by(zip) |>
+  summarize(count = sum(count)) |>
+  arrange(desc(count)) 
+```
+
+```{r}
+map <- dw_create_chart(type = "d3-maps-choropleth", title = "Which Maryland zip codes has the most unemployment filings over the last year?"
+)
+```
+
+```{r}
+dw_data_to_chart(byzip, chart_id = map)
+```
+
+```{r}
+dw_edit_chart(map, 
+              axes = list(
+                values = "count"
+                ), 
+              visualize = list(
+                basemap = "maryland-postcode"
+                )
+              )
+```
+
+```{r}
+dw_publish_chart(map)
+```
+
+```{r}
+iframe_code <- '<iframe src="https://datawrapper.dwcdn.net/JbJdw/1/" width="100%" height="400" style="border: none;"></iframe>'
+HTML(iframe_code)
+```
+
+```{r}
+bar_chart <- dw_create_chart(
+ type="d3-bars",
+  title="Maryland zip codes with the most unemployment"
+)
+```
+
+```{r}
+dw_data_to_chart(byzip, chart_id = bar_chart)
+```
+
+```{r}
+dw_edit_chart(bar_chart, 
+              visualize = list(
+                "base-color" = "beige",
+                "thick" = "true",
+                "value-label-alignment" = "right"
+                )
+              )
+```
+
