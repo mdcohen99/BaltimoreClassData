@@ -79,3 +79,12 @@ dw_edit_chart(bar_chart,
               )
 ```
 
+```{r}
+dw_publish_chart(bar_chart)
+```
+
+```{r}
+i_code <- '<iframe src="https://datawrapper.dwcdn.net/GFMft/1/" width="100%" height="400" style="border: none;"></iframe>'
+HTML(i_code)
+```
+
