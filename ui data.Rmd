@@ -6,7 +6,7 @@ author: Matt Cohen
 ```{r}
 library(DatawRappr)
 library(tidyverse)
-datawrapper_auth(api_key =  "FILL IN API KEY HERE", overwrite=TRUE)
+datawrapper_auth(api_key =  "rPkDkYSV2Wr68AHFBleWjOOyh0UwmX29iIdJWeEN1v92ZQWrvJF6wdkVJrsZmUWw", overwrite=TRUE)
 library(janitor)
 library(lubridate)
 library(htmltools)
@@ -23,8 +23,19 @@ ui_data$month <- as.character(ui_data$month)
 
 
 ```{r}
-ui_pivot <- ui_data |>
-  group_by(zip) |>
+locations <- read_csv("https://raw.githubusercontent.com/profrobwells/Baltimore/refs/heads/main/fall_2024_indep_study/data/county_zip.csv") |> clean_names() 
+```
+```{r}
+locations$zip <- as.character(locations$zip)
+```
+
+```{r}
+combined_data <- left_join(ui_data, locations, by="zip")
+```
+
+```{r}
+ui_pivot <- combined_data |>
+  group_by(zip, primary_city) |>
   summarize(count = sum(count)) |>
   arrange(desc(count)) 
 ```
