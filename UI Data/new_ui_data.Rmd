@@ -6,7 +6,7 @@ author: Matt Cohen
 ```{r}
 library(DatawRappr)
 library(tidyverse)
-datawrapper_auth(api_key =  "Fill in API key here", overwrite=TRUE)
+datawrapper_auth(api_key =  "https://github.com/mdcohen99/BaltimoreClassData", overwrite=TRUE)
 library(janitor)
 library(lubridate)
 library(htmltools)
