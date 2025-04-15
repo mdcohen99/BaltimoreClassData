@@ -6,7 +6,7 @@ author: Matt Cohen
 ```{r}
 library(DatawRappr)
 library(tidyverse)
-datawrapper_auth(api_key =  "https://github.com/mdcohen99/BaltimoreClassData", overwrite=TRUE)
+datawrapper_auth(api_key =  "fill in API key", overwrite=TRUE)
 library(janitor)
 library(lubridate)
 library(htmltools)
@@ -115,5 +115,75 @@ dw_publish_chart(weekly_ui_line)
 ```{r}
 iframe_code <- '<iframe src="https://datawrapper.dwcdn.net/YGqTg/1/" width="100%" height="400" style="border: none;"></iframe>'
 HTML(iframe_code)
+```
+
+**WORKING WITH WORKER SUPPORT PROGRAM DATA**
+
+```{r}
+wsp_data <- read_csv("worker_support_data.csv") |> clean_names() 
+```
+```{r}
+wsp_data <- wsp_data |> rename(zip = zip_code)
+wsp_data$zip <- as.character(wsp_data$zip)
+```
+
+```{r}
+zip_database <- read_csv("zip_code_database.csv")
+```
+
+
+```{r}
+wsp_joined <- left_join(wsp_data, zip_database, by="zip")
+
+wsp_joined$zip <- as.character(wsp_joined$zip)
+```
+
+```{r}
+wsp_joined |>
+  group_by(state) |>
+  summarize(count_of_zip = n()) |>
+  arrange(desc(total_claimants))
+```
+```{r}
+wsp_joined |>
+  group_by(state) |>
+  summarize(total_recipients = sum(number_of_claimants)) |>
+  arrange(desc(total_recipients))
+```
+
+
+```{r}
+wsp_chart <- dw_create_chart()
+```
+
+```{r}
+dw_data_to_chart(wsp_joined, wsp_chart)
+```
+
+```{r}
+dw_edit_chart(wsp_chart, type = "d3-maps-choropleth",
+              visualize = list(
+                basemap="northeast-zip"
+              ), title="Baltimore, Anne Arundel County residents make up majority of Worker Support Program claims", intro="Maryland created the Worker Support Program in the wake of teh Key Bridge collapse. The program provided temporary relief to Port of Baltimore workers. The 3,363 approved applicants received weekly $430 payments. Workers from 11 states received money from the program. Maryland made up the overwhelming majority with 3,259 workers. Pennsylvannia (63), Delaware (15) and Virginia (14) each had more than 10. At least one worker in further away states like Washington, Florida, Minnestota and Georgia received money, too.", source_name="Maryland Dept. of Labor", byline="Matt Cohen")
+```
+
+```{r}
+dw_publish_chart(wsp_chart)
+```
+
+**More geo WSP maps**
+
+```{r}
+south_wsp_chart <- dw_create_chart()
+```
+
+```{r}
+dw_data_to_chart(wsp_joined, south_wsp_chart)
+```
+
+```{r}
+dw_edit_chart(south_wsp_chart, type="d3-maps-choropleth", visualize = list(
+                basemap="south-zip"
+              ), )
 ```
 
