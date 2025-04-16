@@ -1,0 +1,256 @@
+"zip","number_of_claimants","type","decommissioned","primary_city","acceptable_cities","unacceptable_cities","state","county","timezone","area_codes","world_region","country","latitude","longitude","irs_estimated_population"
+"7036",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"15435",2,"PO BOX",0,"Fairbank",NA,NA,"PA","Fayette County","America/New_York","724, 878",NA,"US",39.94,-79.85,588
+"15459",1,"STANDARD",0,"Markleysburg",NA,NA,"PA","Fayette County","America/New_York","227, 240, 301, 304, 582, 681, 724, 814, 878",NA,"US",39.73,-79.45,1190
+"15522",1,"STANDARD",0,"Bedford",NA,NA,"PA","Bedford County","America/New_York","227, 240, 301, 582, 814",NA,"US",40.01,-78.5,10170
+"15537",1,"STANDARD",0,"Everett",NA,NA,"PA","Bedford County","America/New_York","582, 814",NA,"US",40.01,-78.36,6600
+"15554",1,"STANDARD",0,"New Paris",NA,NA,"PA","Bedford County","America/New_York","582, 814",NA,"US",40.1,-78.64,2140
+"15801",1,"STANDARD",0,"Du Bois","Dubois",NA,"PA","Clearfield County","America/New_York","582, 814",NA,"US",41.14,-78.73,16150
+"17011",1,"STANDARD",0,"Camp Hill","Shiremanstown","Camp Hill Brm","PA","Cumberland County","America/New_York","223, 717",NA,"US",40.24,-76.92,30890
+"17015",1,"STANDARD",0,"Carlisle","W Pennsboro, West Pennsboro",NA,"PA","Cumberland County","America/New_York","223, 717",NA,"US",40.15,-77.26,22800
+"17032",1,"STANDARD",0,"Halifax",NA,"Carsonville, Enders, Enterline, Fisherville, Inglenook, Mcclellan, Powells Vly, Reed, Waynesville","PA","Dauphin County","America/New_York","223, 717",NA,"US",40.46,-76.93,7340
+"17050",2,"STANDARD",0,"Mechanicsburg","Hampden Township, Hampden Twp, Silver Spg Tp, Silver Spring Township","Defense Depot, Goodhope, Hampden Station, Hogestown, Mech, Mechancsbrg, Mechbg, Navy Ships, Navy Sup Dpt, Trindle Sprg, Wertzville","PA","Cumberland County","America/New_York","223, 717",NA,"US",40.24,-77.02,43450
+"17055",2,"STANDARD",0,"Mechanicsburg","Bowmansdale","Andersontown, Brandtsville, Defense Depot, Lisburn, Locust Point, Mech, Mechancsbrg, Mechbg, Mount Allen, Navy Ships, Navy Sup Dpt, Shepherdstown, Upper Allen, Williams Grv, Winding Hill","PA","Cumberland County","America/New_York","223, 717",NA,"US",40.21,-77,40650
+"17061",1,"STANDARD",0,"Millersburg",NA,"Killinger, Lenkerville, Millersbg, Rife, Upper Paxton","PA","Dauphin County","America/New_York","223, 272, 570, 717",NA,"US",40.54,-76.95,6190
+"17222",2,"STANDARD",0,"Fayetteville",NA,NA,"PA","Franklin County","America/New_York","223, 717",NA,"US",39.91,-77.56,10450
+"17313",1,"STANDARD",0,"Dallastown","Yoe",NA,"PA","York County","America/New_York","223, 717",NA,"US",39.89,-76.64,9490
+"17314",5,"STANDARD",0,"Delta",NA,"Bryansville, Coal Cabin Beach, Slate Hill, West Bangor","PA","York County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.76,-76.33,5520
+"17320",1,"STANDARD",0,"Fairfield","Greenstone","Carroll Valley, Charnita","PA","Adams County","America/New_York","223, 227, 240, 301, 717",NA,"US",39.78,-77.36,7730
+"17321",1,"STANDARD",0,"Fawn Grove",NA,"Fawn","PA","York County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.75,-76.44,2280
+"17322",1,"STANDARD",0,"Felton",NA,"Brogueville, Cross Roads, Lucky","PA","York County","America/New_York","223, 717",NA,"US",39.85,-76.56,5600
+"17331",7,"STANDARD",0,"Hanover",NA,"Baresville, Bowman Addition, Brushtown, Edgegrove, Fairview Drive, Gitts Run, Gnatstown, Grangeville, Green Springs, Hershey Heights, Hobart, Jacobs Mills, Moulstown, Park Heights, Park Hills, Parkville, Pennville, Pleasant Hill, Shorbes Hill, York Road","PA","York County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.81,-76.98,52350
+"17349",4,"STANDARD",0,"New Freedom",NA,"Tolna","PA","York County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.73,-76.69,8250
+"17356",1,"STANDARD",0,"Red Lion",NA,"Freysville, New Bridgeville, Pleasant View, Snyder Corner, Springvale","PA","York County","America/New_York","223, 717",NA,"US",39.89,-76.6,21940
+"17360",2,"STANDARD",0,"Seven Valleys",NA,NA,"PA","York County","America/New_York","223, 717",NA,"US",39.85,-76.76,6240
+"17361",4,"STANDARD",0,"Shrewsbury",NA,NA,"PA","York County","America/New_York","223, 717",NA,"US",39.77,-76.68,5720
+"17362",2,"STANDARD",0,"Spring Grove","Menges Mills","Nashville, Sinsheim, Stoverstown","PA","York County","America/New_York","223, 717",NA,"US",39.88,-76.86,13660
+"17363",1,"STANDARD",0,"Stewartstown",NA,"Rinely","PA","York County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.75,-76.59,9310
+"17370",1,"STANDARD",0,"York Haven",NA,"Cly","PA","York County","America/New_York","223, 717",NA,"US",40.11,-76.71,6180
+"17402",2,"STANDARD",0,"York","East York, Springettsbury Township, Sprngtsbry Tp","Fayfield, Glades, Locust Grove, Longstown, Mount Zion, Pleasureville, Spry, Stonybrook, Yorklyn, Yorkshire","PA","York County","America/New_York","223, 717",NA,"US",39.96,-76.66,32270
+"17403",3,"STANDARD",0,"York",NA,"Botts, Leaders Heights, Ore Valley, Windsor Park, Wyndham Hills","PA","York County","America/New_York","223, 717",NA,"US",39.92,-76.71,34400
+"17404",2,"STANDARD",0,"York","West York","Shiloh","PA","York County","America/New_York","223, 717",NA,"US",40,-76.77,35580
+"17406",4,"STANDARD",0,"York","Hallam, Hellam, Yorkana","Accomac, Highmount, Kreutz Creek","PA","York County","America/New_York","223, 717",NA,"US",40.01,-76.64,22420
+"17408",1,"STANDARD",0,"York","New Salem Borough, New Salem Bro, W Manchester, West Manchester Twp",NA,"PA","York County","America/New_York","223, 717",NA,"US",39.95,-76.81,22580
+"17601",1,"STANDARD",0,"Lancaster","Neffsville","Eden, Fruitville, Oyster Point, Roseville","PA","Lancaster County","America/New_York","223, 717",NA,"US",40.07,-76.31,52510
+"19140",1,"STANDARD",0,"Philadelphia","Phila",NA,"PA","Philadelphia County","America/New_York","215, 267, 445",NA,"US",40.01,-75.15,35550
+"19320",1,"STANDARD",0,"Coatesville","E Fallowfield, East Fallowfield Township, Romansville, Valley Township, Valley Twp, W Brandywine, West Bradford, West Brandywine",NA,"PA","Chester County","America/New_York","223, 484, 610, 717, 835",NA,"US",39.98,-75.81,48300
+"19701",1,"STANDARD",0,"Bear",NA,NA,"DE","New Castle County","America/New_York","302",NA,"US",39.58,-75.68,39310
+"19702",4,"STANDARD",0,"Newark","Christiana",NA,"DE","New Castle County","America/New_York","302, 410, 443, 667",NA,"US",39.62,-75.73,48530
+"19734",2,"STANDARD",0,"Townsend",NA,"Blackbird","DE","New Castle County","America/New_York","302, 410, 443, 667",NA,"US",39.39,-75.69,13790
+"19807",2,"STANDARD",0,"Wilmington","Greenville",NA,"DE","New Castle County","America/New_York","302, 484, 610, 835",NA,"US",39.8,-75.61,8290
+"19808",1,"STANDARD",0,"Wilmington","Marshallton",NA,"DE","New Castle County","America/New_York","302",NA,"US",39.74,-75.67,35820
+"19963",2,"STANDARD",0,"Milford",NA,"Slaughter Beach","DE","Sussex County","America/New_York","302",NA,"US",38.91,-75.43,19690
+"19966",1,"STANDARD",0,"Millsboro","Long Neck",NA,"DE","Sussex County","America/New_York","302, 410, 443, 667",NA,"US",38.58,-75.29,32010
+"19973",1,"STANDARD",0,"Seaford","Blades",NA,"DE","Sussex County","America/New_York","302, 410, 443, 667",NA,"US",38.64,-75.61,23240
+"19977",1,"STANDARD",0,"Smyrna",NA,NA,"DE","Kent County","America/New_York","302",NA,"US",39.29,-75.6,24390
+"20012",1,"STANDARD",0,"Washington",NA,NA,"DC","District of Columbia","America/New_York","202, 227, 240, 301, 771",NA,"US",38.98,-77.03,14720
+"20017",1,"STANDARD",0,"Washington",NA,NA,"DC","District of Columbia","America/New_York","202, 227, 240, 301, 771",NA,"US",38.94,-76.99,16500
+"20019",1,"STANDARD",0,"Washington",NA,NA,"DC","District of Columbia","America/New_York","202, 227, 240, 301, 771",NA,"US",38.89,-76.94,46690
+"20020",1,"STANDARD",0,"Washington",NA,NA,"DC","District of Columbia","America/New_York","202, 227, 240, 301, 771",NA,"US",38.86,-76.98,39840
+"20148",1,"STANDARD",0,"Ashburn","Brambleton, Broadlands",NA,"VA","Loudoun County","America/New_York","571, 703",NA,"US",39,-77.52,65360
+"20169",1,"STANDARD",0,"Haymarket",NA,NA,"VA","Prince William County","America/New_York","540, 571, 703, 826",NA,"US",38.88,-77.65,29780
+"20601",1,"STANDARD",0,"Waldorf",NA,NA,"MD","Charles County","America/New_York","227, 240, 301",NA,"US",38.64,-76.9,25380
+"20602",1,"STANDARD",0,"Waldorf","Saint Charles",NA,"MD","Charles County","America/New_York","227, 240, 301",NA,"US",38.58,-76.89,25000
+"20637",1,"STANDARD",0,"Hughesville",NA,NA,"MD","Charles County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",38.53,-76.78,5960
+"20646",1,"STANDARD",0,"La Plata","Dentsville","Laplata","MD","Charles County","America/New_York","227, 240, 301",NA,"US",38.53,-76.97,19940
+"20662",1,"STANDARD",0,"Nanjemoy",NA,NA,"MD","Charles County","America/New_York","227, 240, 301",NA,"US",38.45,-77.21,2260
+"20705",4,"STANDARD",0,"Beltsville","Calverton",NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",39.03,-76.92,27720
+"20706",6,"STANDARD",0,"Lanham","Glenarden, Lanham Seabrook, Seabrook",NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.96,-76.85,43280
+"20707",4,"STANDARD",0,"Laurel",NA,NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",39.1,-76.88,33930
+"20715",2,"STANDARD",0,"Bowie",NA,NA,"MD","Prince George's County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",38.99,-76.74,24380
+"20716",1,"STANDARD",0,"Bowie","Mitchellville","S Bowie, South Bowie","MD","Prince George's County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",38.95,-76.73,20040
+"20720",2,"STANDARD",0,"Bowie",NA,NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.98,-76.79,24180
+"20721",3,"STANDARD",0,"Bowie","Mitchellville",NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.92,-76.79,28720
+"20723",5,"STANDARD",0,"Laurel","Scaggsville",NA,"MD","Howard County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.14,-76.87,33740
+"20724",6,"STANDARD",0,"Laurel","Maryland City, Md City, Russett",NA,"MD","Anne Arundel County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.1,-76.8,17560
+"20733",1,"STANDARD",0,"Churchton",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",38.81,-76.53,2630
+"20735",1,"STANDARD",0,"Clinton",NA,NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.76,-76.89,34850
+"20743",1,"STANDARD",0,"Capitol Heights","Capitol Hgts, Fairmount Heights, Fairmount Hgt, Seat Pleasant",NA,"MD","Prince George's County","America/New_York","202, 227, 240, 301, 771",NA,"US",38.87,-76.9,33090
+"20745",1,"STANDARD",0,"Oxon Hill","Forest Heights, Forest Hts","National Harbor","MD","Prince George's County","America/New_York","202, 227, 240, 301, 771",NA,"US",38.8,-76.99,24790
+"20746",1,"STANDARD",0,"Suitland","Camp Springs, Hillcrest Hgts, Hillcrest Hts, Morningside","Marlow Heights, Silver Hill","MD","Prince George's County","America/New_York","202, 227, 240, 301, 771",NA,"US",38.83,-76.92,22760
+"20747",2,"STANDARD",0,"District Heights","District Hts, Forestville",NA,"MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.85,-76.88,31040
+"20748",1,"STANDARD",0,"Temple Hills","Camp Springs, Hillcrest Heights, Hillcrest Hts, Marlow Heights, Marlow Hgts",NA,"MD","Prince George's County","America/New_York","202, 227, 240, 301, 771",NA,"US",38.81,-76.93,30880
+"20751",2,"STANDARD",0,"Deale",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",38.79,-76.54,2190
+"20755",1,"STANDARD",0,"Fort George G Meade","Fort Meade","Fort George Meade, Ft George G Meade, Ft Meade","MD","Anne Arundel County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.11,-76.75,7710
+"20759",1,"STANDARD",0,"Fulton",NA,NA,"MD","Howard County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.15,-76.92,7200
+"20763",1,"STANDARD",0,"Savage",NA,NA,"MD","Howard County","America/New_York","227, 240, 301",NA,"US",39.13,-76.81,2570
+"20772",4,"STANDARD",0,"Upper Marlboro","Uppr Marlboro","Marlboro","MD","Prince George's County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",38.81,-76.75,48120
+"20774",3,"STANDARD",0,"Upper Marlboro","Glenarden, Kettering, Largo, Springdale, Uppr Marlboro, Upr Marlboro",NA,"MD","Prince George's County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",38.87,-76.77,47410
+"20781",2,"STANDARD",0,"Hyattsville",NA,"Avondale, Cheverly, Edmonston, Rogers Heights, Tuxedo","MD","Prince George's County","America/New_York","202, 227, 240, 301, 771",NA,"US",38.95,-76.95,11610
+"20782",2,"STANDARD",0,"Hyattsville","Chillum, University Pa, University Park, W Hyattsville, West Hyattsville","Avondale, Green Meadow, Lewisdale, Prince Georges Metro Ctr","MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.97,-76.97,28440
+"20783",1,"STANDARD",0,"Hyattsville","Adelphi","Langley Park","MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",39,-76.97,40360
+"20784",1,"STANDARD",0,"Hyattsville","Cheverly, Landover Hills, Landover Hls, New Carrolltn, New Carrollton","Lanham","MD","Prince George's County","America/New_York","227, 240, 301",NA,"US",38.95,-76.89,30650
+"20794",4,"STANDARD",0,"Jessup",NA,NA,"MD","Howard County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.14,-76.77,10860
+"20817",1,"STANDARD",0,"Bethesda","Westlake",NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",38.98,-77.12,36030
+"20832",1,"STANDARD",0,"Olney",NA,NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.14,-77.08,24800
+"20853",2,"STANDARD",0,"Rockville",NA,NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.1,-77.09,30280
+"20855",1,"STANDARD",0,"Derwood","Rockville",NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.13,-77.13,16300
+"20866",5,"STANDARD",0,"Burtonsville",NA,NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.11,-76.93,14840
+"20874",2,"STANDARD",0,"Germantown","Darnestown",NA,"MD","Montgomery County","America/New_York","227, 240, 301, 571, 703",NA,"US",39.17,-77.26,57950
+"20876",2,"STANDARD",0,"Germantown",NA,NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.21,-77.24,24410
+"20877",1,"STANDARD",0,"Gaithersburg","Montgomery Village, Montgomry Vlg",NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.14,-77.21,34400
+"20886",1,"STANDARD",0,"Montgomery Village","Gaithersburg, Montgomry Vlg",NA,"MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.19,-77.21,33560
+"20903",2,"STANDARD",0,"Silver Spring",NA,"Hillandale","MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.02,-76.98,22030
+"20904",5,"STANDARD",0,"Silver Spring","Colesville","Cloverly","MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39.07,-76.98,52860
+"20910",1,"STANDARD",0,"Silver Spring",NA,"Takoma Pk","MD","Montgomery County","America/New_York","227, 240, 301",NA,"US",39,-77.04,37590
+"21001",36,"STANDARD",0,"Aberdeen",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.51,-76.17,23800
+"21009",46,"STANDARD",0,"Abingdon",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.46,-76.27,28930
+"21012",2,"STANDARD",0,"Arnold",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.04,-76.49,21270
+"21013",2,"STANDARD",0,"Baldwin",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.51,-76.49,4840
+"21014",24,"STANDARD",0,"Bel Air",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.53,-76.34,35750
+"21015",23,"STANDARD",0,"Bel Air",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.54,-76.29,30210
+"21017",8,"STANDARD",0,"Belcamp",NA,"Riverside","MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.47,-76.23,5610
+"21022",1,"PO BOX",0,"Brooklandville","Brooklandvl",NA,"MD","Baltimore County","America/New_York","410",NA,"US",39.42,-76.67,326
+"21023",1,"PO BOX",0,"Butler",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.52,-76.74,247
+"21028",1,"STANDARD",0,"Churchville",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.56,-76.24,3150
+"21030",12,"STANDARD",0,"Cockeysville","Cockysvil, Hunt Valley",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.47,-76.63,23080
+"21034",1,"STANDARD",0,"Darlington",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.63,-76.2,2970
+"21035",1,"STANDARD",0,"Davidsonville",NA,NA,"MD","Anne Arundel County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",38.93,-76.63,8280
+"21037",1,"STANDARD",0,"Edgewater",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",38.9,-76.54,20370
+"21040",43,"STANDARD",0,"Edgewood",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.42,-76.29,21910
+"21042",6,"STANDARD",0,"Ellicott City",NA,"Ellicott","MD","Howard County","America/New_York","410, 443, 667",NA,"US",39.27,-76.83,43950
+"21043",8,"STANDARD",0,"Ellicott City","Daniels, Ilchester, Oella","Ellicott","MD","Howard County","America/New_York","410, 443, 667",NA,"US",39.26,-76.8,45710
+"21044",10,"STANDARD",0,"Columbia",NA,NA,"MD","Howard County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.21,-76.88,39870
+"21045",23,"STANDARD",0,"Columbia",NA,NA,"MD","Howard County","America/New_York","410, 443, 667",NA,"US",39.2,-76.85,36420
+"21046",3,"STANDARD",0,"Columbia",NA,NA,"MD","Howard County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.17,-76.84,14500
+"21047",8,"STANDARD",0,"Fallston",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.52,-76.42,13330
+"21048",5,"STANDARD",0,"Finksburg","Patapsco",NA,"MD","Carroll County","America/New_York","410, 443, 667",NA,"US",39.49,-76.88,10370
+"21050",12,"STANDARD",0,"Forest Hill",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.58,-76.39,18190
+"21052",4,"PO BOX",0,"Fort Howard",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.21,-76.44,417
+"21054",1,"STANDARD",0,"Gambrills",NA,NA,"MD","Anne Arundel County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.04,-76.69,14010
+"21057",6,"STANDARD",0,"Glen Arm",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.44,-76.5,3860
+"21060",61,"STANDARD",0,"Glen Burnie",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.16,-76.6,35590
+"21061",50,"STANDARD",0,"Glen Burnie",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.16,-76.63,48720
+"21074",4,"STANDARD",0,"Hampstead","Greenmount",NA,"MD","Carroll County","America/New_York","410, 443, 667",NA,"US",39.61,-76.85,14660
+"21075",13,"STANDARD",0,"Elkridge",NA,NA,"MD","Howard County","America/New_York","410, 443, 667",NA,"US",39.2,-76.75,33710
+"21076",13,"STANDARD",0,"Hanover",NA,"Harmans","MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.16,-76.72,23180
+"21078",13,"STANDARD",0,"Havre De Grace","Hvre De Grace",NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.54,-76.09,18200
+"21082",1,"STANDARD",0,"Hydes",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.48,-76.47,930
+"21084",7,"STANDARD",0,"Jarrettsville",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.6,-76.47,7370
+"21085",33,"STANDARD",0,"Joppa",NA,"Joppatown, Joppatowne","MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.43,-76.35,15760
+"21087",5,"STANDARD",0,"Kingsville","Bradshaw",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.44,-76.41,5470
+"21090",23,"STANDARD",0,"Linthicum Heights","Linthicum, Linthicum Hts",NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.2,-76.66,9990
+"21093",9,"STANDARD",0,"Lutherville Timonium","Lutherville, Luthvle Timon, Timonium",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.43,-76.64,36720
+"21102",6,"STANDARD",0,"Manchester","Lineboro, Millers",NA,"MD","Carroll County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.65,-76.89,11550
+"21108",6,"STANDARD",0,"Millersville",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.05,-76.64,18980
+"21111",2,"STANDARD",0,"Monkton","Hereford",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.57,-76.58,4950
+"21113",2,"STANDARD",0,"Odenton",NA,NA,"MD","Anne Arundel County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.05,-76.72,35320
+"21114",2,"STANDARD",0,"Crofton",NA,NA,"MD","Anne Arundel County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.01,-76.68,25170
+"21117",49,"STANDARD",0,"Owings Mills","Garrison",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.41,-76.79,50560
+"21120",2,"STANDARD",0,"Parkton","Bentley Spgs, Bentley Springs",NA,"MD","Baltimore County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.65,-76.67,7260
+"21122",163,"STANDARD",0,"Pasadena","Lake Shore, Riviera Beach",NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.11,-76.55,58060
+"21128",31,"STANDARD",0,"Perry Hall",NA,"Perryhall","MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.41,-76.45,14870
+"21131",1,"STANDARD",0,"Phoenix","Jacksonville",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.5,-76.56,7890
+"21132",3,"STANDARD",0,"Pylesville",NA,NA,"MD","Harford County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.68,-76.37,2800
+"21133",54,"STANDARD",0,"Randallstown","Mcdonogh Run","Foxridge","MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.37,-76.8,26230
+"21136",18,"STANDARD",0,"Reisterstown","Glyndon",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.45,-76.81,32350
+"21144",26,"STANDARD",0,"Severn",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.13,-76.69,35220
+"21146",10,"STANDARD",0,"Severna Park",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.08,-76.57,28450
+"21154",4,"STANDARD",0,"Street",NA,NA,"MD","Harford County","America/New_York","410, 443, 667",NA,"US",39.65,-76.34,6050
+"21155",2,"STANDARD",0,"Upperco","Fowbelsburg",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.57,-76.8,2330
+"21156",1,"STANDARD",0,"Upper Falls",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.43,-76.4,330
+"21157",10,"STANDARD",0,"Westminster",NA,"Carrollton","MD","Carroll County","America/New_York","410, 443, 667",NA,"US",39.57,-77,34800
+"21158",4,"STANDARD",0,"Westminster",NA,NA,"MD","Carroll County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.65,-77.04,20180
+"21160",3,"STANDARD",0,"Whiteford","Cardiff",NA,"MD","Harford County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.7,-76.34,2320
+"21161",3,"STANDARD",0,"White Hall",NA,"Norrisville","MD","Harford County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.65,-76.56,5250
+"21162",10,"STANDARD",0,"White Marsh",NA,NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.39,-76.41,4860
+"21163",4,"STANDARD",0,"Woodstock","Granite",NA,"MD","Howard County","America/New_York","410, 443, 667",NA,"US",39.32,-76.87,7280
+"21201",9,"STANDARD",0,"Baltimore",NA,NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.29,-76.62,10080
+"21202",16,"STANDARD",0,"Baltimore","East Case",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.3,-76.61,12800
+"21203",1,"PO BOX",0,"Baltimore",NA,NA,"MD","Baltimore City","America/New_York","410",NA,"US",39.3,-76.61,1290
+"21204",7,"STANDARD",0,"Towson","Baltimore, Eudowood, Loch Raven, Ruxton",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.39,-76.62,15160
+"21205",24,"STANDARD",0,"Baltimore",NA,"Clifton East End, East End","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.3,-76.56,10750
+"21206",164,"STANDARD",0,"Baltimore","Raspeburg",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.34,-76.54,39470
+"21207",94,"STANDARD",0,"Gwynn Oak","Baltimore, Pikesville, Woodlawn",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.32,-76.72,38470
+"21208",29,"STANDARD",0,"Pikesville","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.39,-76.7,30290
+"21209",16,"STANDARD",0,"Baltimore","Mount Washington, Mt Washington",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.37,-76.67,25300
+"21210",3,"STANDARD",0,"Baltimore","Roland Park",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.36,-76.63,9380
+"21211",6,"STANDARD",0,"Baltimore",NA,"Hampden","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.33,-76.64,13400
+"21212",29,"STANDARD",0,"Baltimore","Govans",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.37,-76.61,26480
+"21213",72,"STANDARD",0,"Baltimore","Clifton","Clifton East End","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.31,-76.58,20770
+"21214",40,"STANDARD",0,"Baltimore",NA,"Hamilton","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.35,-76.56,15910
+"21215",77,"STANDARD",0,"Baltimore","Arlington",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.35,-76.68,40040
+"21216",50,"STANDARD",0,"Baltimore",NA,"Walbrook","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.31,-76.67,18790
+"21217",25,"STANDARD",0,"Baltimore","Druid",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.31,-76.64,18710
+"21218",51,"STANDARD",0,"Baltimore",NA,"Waverly","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.33,-76.6,28850
+"21219",92,"STANDARD",0,"Sparrows Point","Baltimore, Edgemere, Sparrows Pt",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.22,-76.43,8870
+"21220",114,"STANDARD",0,"Middle River","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.33,-76.43,39180
+"21221",112,"STANDARD",0,"Essex","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.3,-76.44,36510
+"21222",283,"STANDARD",0,"Dundalk","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.26,-76.49,49530
+"21223",25,"STANDARD",0,"Baltimore","Franklin",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.28,-76.65,13810
+"21224",97,"STANDARD",0,"Baltimore","Highlandtown",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.27,-76.54,43140
+"21225",62,"STANDARD",0,"Brooklyn","Baltimore, Brooklyn Park",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.22,-76.61,27330
+"21226",14,"STANDARD",0,"Curtis Bay","Baltimore, Carvel Beach, Chestnut Hill Cove, Chstnt Hl Cv, Clearwater Beach, Clearwatr Bch, Greenland Bch, Greenland Beach, Orchard Beach, Stoney Beach","Brooklyn","MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.21,-76.55,5750
+"21227",38,"STANDARD",0,"Halethorpe","Arbutus, Baltimore, Lansdowne",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.24,-76.68,29490
+"21228",44,"STANDARD",0,"Catonsville","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.26,-76.74,44720
+"21229",65,"STANDARD",0,"Baltimore","Carroll",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.28,-76.69,33520
+"21230",64,"STANDARD",0,"Baltimore",NA,NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.27,-76.62,27860
+"21231",5,"STANDARD",0,"Baltimore",NA,"Patterson","MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.29,-76.59,11510
+"21234",99,"STANDARD",0,"Parkville","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.38,-76.55,57520
+"21236",65,"STANDARD",0,"Nottingham","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.39,-76.48,36990
+"21237",102,"STANDARD",0,"Rosedale","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.32,-76.5,27590
+"21239",50,"STANDARD",0,"Baltimore","Idlewylde, Loch Hill, Northwood",NA,"MD","Baltimore city","America/New_York","410, 443, 667",NA,"US",39.37,-76.59,21400
+"21244",65,"STANDARD",0,"Windsor Mill","Baltimore",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.33,-76.78,31250
+"21286",12,"STANDARD",0,"Towson","Baltimore, Loch Raven",NA,"MD","Baltimore County","America/New_York","410, 443, 667",NA,"US",39.41,-76.57,18710
+"21401",1,"STANDARD",0,"Annapolis","Cape Saint Claire, Cpe St Claire",NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",38.99,-76.55,34980
+"21403",1,"STANDARD",0,"Annapolis","Highland Bch",NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",38.97,-76.5,28370
+"21409",1,"STANDARD",0,"Annapolis",NA,NA,"MD","Anne Arundel County","America/New_York","410, 443, 667",NA,"US",39.02,-76.45,19470
+"21502",1,"STANDARD",0,"Cumberland","Cresaptown, Lavale",NA,"MD","Allegany County","America/New_York","227, 240, 301, 304, 582, 681, 814",NA,"US",39.65,-78.76,29600
+"21532",1,"STANDARD",0,"Frostburg",NA,NA,"MD","Allegany County","America/New_York","227, 240, 301, 582, 814",NA,"US",39.66,-78.92,10410
+"21601",3,"STANDARD",0,"Easton",NA,NA,"MD","Talbot County","America/New_York","410, 443, 667",NA,"US",38.77,-76.06,21630
+"21617",12,"STANDARD",0,"Centreville",NA,NA,"MD","Queen Anne's County","America/New_York","410, 443, 667",NA,"US",39.04,-76.06,10450
+"21619",6,"STANDARD",0,"Chester",NA,NA,"MD","Queen Anne's County","America/New_York","410, 443, 667",NA,"US",38.95,-76.28,6760
+"21620",5,"STANDARD",0,"Chestertown",NA,NA,"MD","Kent County","America/New_York","410, 443, 667",NA,"US",39.21,-76.07,10380
+"21623",1,"STANDARD",0,"Church Hill",NA,NA,"MD","Queen Anne's County","America/New_York","410, 443, 667",NA,"US",39.14,-75.98,2050
+"21629",1,"STANDARD",0,"Denton",NA,NA,"MD","Caroline County","America/New_York","302, 410, 443, 667",NA,"US",38.88,-75.82,8860
+"21632",1,"STANDARD",0,"Federalsburg",NA,NA,"MD","Caroline County","America/New_York","302, 410, 443, 667",NA,"US",38.69,-75.77,5430
+"21635",1,"STANDARD",0,"Galena","Golts",NA,"MD","Kent County","America/New_York","302, 410, 443, 667",NA,"US",39.34,-75.87,1830
+"21638",1,"STANDARD",0,"Grasonville",NA,NA,"MD","Queen Anne's County","America/New_York","410, 443, 667",NA,"US",38.95,-76.19,4860
+"21639",1,"STANDARD",0,"Greensboro",NA,NA,"MD","Caroline County","America/New_York","302, 410, 443, 667",NA,"US",38.97,-75.8,4210
+"21643",1,"STANDARD",0,"Hurlock",NA,NA,"MD","Dorchester County","America/New_York","410, 443, 667",NA,"US",38.62,-75.87,5290
+"21649",2,"STANDARD",0,"Marydel",NA,NA,"MD","Caroline County","America/New_York","302, 410, 443, 667",NA,"US",39.13,-75.77,1790
+"21658",1,"STANDARD",0,"Queenstown",NA,NA,"MD","Queen Anne's County","America/New_York","410, 443, 667",NA,"US",38.98,-76.15,3800
+"21660",1,"STANDARD",0,"Ridgely",NA,NA,"MD","Caroline County","America/New_York","410, 443, 667",NA,"US",38.94,-75.88,3730
+"21666",8,"STANDARD",0,"Stevensville",NA,NA,"MD","Queen Anne's County","America/New_York","410, 443, 667",NA,"US",38.99,-76.3,13090
+"21668",1,"STANDARD",0,"Sudlersville",NA,NA,"MD","Queen Anne's County","America/New_York","302, 410, 443, 667",NA,"US",39.18,-75.85,1560
+"21671",1,"STANDARD",0,"Tilghman",NA,NA,"MD","Talbot County","America/New_York","410, 443, 667",NA,"US",38.69,-76.33,730
+"21702",1,"STANDARD",0,"Frederick","Fort Detrick","College Estates","MD","Frederick County","America/New_York","227, 240, 301",NA,"US",39.48,-77.46,44620
+"21703",2,"STANDARD",0,"Frederick",NA,NA,"MD","Frederick County","America/New_York","227, 240, 301",NA,"US",39.37,-77.47,41070
+"21722",2,"STANDARD",0,"Clear Spring","Big Spring",NA,"MD","Washington County","America/New_York","223, 227, 240, 301, 304, 681, 717",NA,"US",39.65,-77.93,5260
+"21740",1,"STANDARD",0,"Hagerstown",NA,NA,"MD","Washington County","America/New_York","223, 227, 240, 301, 717",NA,"US",39.63,-77.71,54830
+"21741",1,"PO BOX",0,"Hagerstown",NA,NA,"MD","Washington County","America/New_York","240",NA,"US",39.63,-77.71,870
+"21742",1,"STANDARD",0,"Hagerstown",NA,"Northern","MD","Washington County","America/New_York","223, 227, 240, 301, 717",NA,"US",39.68,-77.65,30790
+"21750",2,"STANDARD",0,"Hancock",NA,NA,"MD","Washington County","America/New_York","223, 227, 240, 301, 304, 681, 717",NA,"US",39.7,-78.17,3080
+"21757",1,"STANDARD",0,"Keymar","Detour, Middleburg",NA,"MD","Frederick County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.59,-77.26,2670
+"21766",1,"STANDARD",0,"Little Orleans","Ltl Orleans",NA,"MD","Allegany County","America/New_York","227, 240, 301, 304, 681",NA,"US",39.67,-78.39,500
+"21769",1,"STANDARD",0,"Middletown",NA,NA,"MD","Frederick County","America/New_York","227, 240, 301",NA,"US",39.44,-77.54,11850
+"21774",1,"STANDARD",0,"New Market",NA,"Lake Linganore","MD","Frederick County","America/New_York","227, 240, 301",NA,"US",39.41,-77.27,18930
+"21782",1,"STANDARD",0,"Sharpsburg",NA,NA,"MD","Washington County","America/New_York","227, 240, 301, 304, 681",NA,"US",39.45,-77.74,3540
+"21784",11,"STANDARD",0,"Sykesville","Eldersburg, Gaither",NA,"MD","Carroll County","America/New_York","410, 443, 667",NA,"US",39.37,-76.97,38790
+"21787",1,"STANDARD",0,"Taneytown",NA,NA,"MD","Carroll County","America/New_York","227, 240, 301, 410, 443, 667",NA,"US",39.65,-77.16,11250
+"21788",1,"STANDARD",0,"Thurmont","Graceham",NA,"MD","Frederick County","America/New_York","227, 240, 301",NA,"US",39.62,-77.4,10750
+"21813",2,"STANDARD",0,"Bishopville",NA,"Bishop","MD","Worcester County","America/New_York","302, 410, 443, 667",NA,"US",38.44,-75.19,2740
+"21901",6,"STANDARD",0,"North East",NA,"Northeast","MD","Cecil County","America/New_York","410, 443, 667",NA,"US",39.6,-75.94,16860
+"21903",1,"STANDARD",0,"Perryville",NA,NA,"MD","Cecil County","America/New_York","410, 443, 667",NA,"US",39.57,-76.06,5040
+"21904",5,"STANDARD",0,"Port Deposit","Bainbridge",NA,"MD","Cecil County","America/New_York","410, 443, 667",NA,"US",39.6,-76.11,6160
+"21911",3,"STANDARD",0,"Rising Sun",NA,NA,"MD","Cecil County","America/New_York","223, 410, 443, 484, 610, 667, 717, 835",NA,"US",39.69,-76.06,9890
+"21918",1,"STANDARD",0,"Conowingo",NA,NA,"MD","Cecil County","America/New_York","223, 410, 443, 667, 717",NA,"US",39.68,-76.16,3770
+"21921",12,"STANDARD",0,"Elkton",NA,NA,"MD","Cecil County","America/New_York","302, 410, 443, 484, 610, 667, 835",NA,"US",39.6,-75.82,38590
+"22041",1,"STANDARD",0,"Falls Church","Baileys Crossroads, Baileys Xrds",NA,"VA","Fairfax County","America/New_York","571, 703",NA,"US",38.85,-77.14,24700
+"22079",1,"STANDARD",0,"Lorton","Mason Neck",NA,"VA","Fairfax County","America/New_York","227, 240, 301, 571, 703",NA,"US",38.7,-77.24,33480
+"22150",1,"STANDARD",0,"Springfield",NA,NA,"VA","Fairfax County","America/New_York","571, 703",NA,"US",38.78,-77.17,27220
+"22182",1,"STANDARD",0,"Vienna","Tysons, Tysons Corner",NA,"VA","Fairfax County","America/New_York","571, 703",NA,"US",38.94,-77.27,26350
+"22191",1,"STANDARD",0,"Woodbridge",NA,"Wdbg","VA","Prince William County","America/New_York","227, 240, 301, 571, 703",NA,"US",38.63,-77.26,68870
+"22193",2,"STANDARD",0,"Woodbridge","Dale City","Dalecity","VA","Prince William County","America/New_York","571, 703",NA,"US",38.64,-77.35,81880
+"22554",1,"STANDARD",0,"Stafford",NA,NA,"VA","Stafford County","America/New_York","227, 240, 301, 540, 571, 703, 826",NA,"US",38.42,-77.4,64510
+"22611",1,"STANDARD",0,"Berryville","Mount Weather",NA,"VA","Clarke County","America/New_York","304, 540, 681, 826",NA,"US",39.14,-77.98,8860
+"22980",1,"STANDARD",0,"Waynesboro",NA,"Park","VA","Waynesboro city","America/New_York","434, 540, 826",NA,"US",38.06,-78.9,30190
+"23116",1,"STANDARD",0,"Mechanicsville","Mechanicsvlle",NA,"VA","Hanover County","America/New_York","804",NA,"US",37.68,-77.34,33930
+"24153",1,"STANDARD",0,"Salem",NA,"Bennett Springs, Fort Lewis, Glenvar, Hanging Rock, Kesslers Mill, Mason Cove","VA","Salem city","America/New_York","540, 826",NA,"US",37.28,-80.05,32380
+"25405",1,"STANDARD",0,"Martinsburg",NA,NA,"WV","Berkeley County","America/New_York","304, 681",NA,"US",39.41,-77.96,12850
+"28504",1,"STANDARD",0,"Kinston",NA,NA,"NC","Lenoir County","America/New_York","252",NA,"US",35.22,-77.63,16670
+"30047",1,"STANDARD",0,"Lilburn",NA,NA,"GA","Gwinnett County","America/New_York","470, 678, 770, 943",NA,"US",33.88,-84.13,63280
+"33414",1,"STANDARD",0,"Wellington","Royal Palm Beach, Royal Plm Bch, Village Of Wellington, Vlg Wellingtn, West Palm Bch, West Palm Beach","Royal Plm Beach","FL","Palm Beach County","America/New_York","561",NA,"US",26.65,-80.25,54130
+"34983",1,"STANDARD",0,"Port Saint Lucie","Fort Pierce, Port St Lucie, Saint Lucie West, St Lucie West",NA,"FL","St. Lucie County","America/New_York","772",NA,"US",27.32,-80.35,43180
+"55408",1,"STANDARD",0,"Minneapolis",NA,NA,"MN","Hennepin County","America/Chicago","612, 952",NA,"US",44.94,-93.29,24850
+"98201",1,"STANDARD",0,"Everett",NA,NA,"WA","Snohomish County","America/Los_Angeles","360, 425, 564",NA,"US",47.98,-122.2,23580
