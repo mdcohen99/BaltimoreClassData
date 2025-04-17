@@ -6,7 +6,7 @@ author: Matt Cohen
 ```{r}
 library(DatawRappr)
 library(tidyverse)
-datawrapper_auth(api_key =  "fill in api key", overwrite=TRUE)
+datawrapper_auth(api_key =  "vWqY9z6ikqSKVEk8PI9RLQ8wpspkmGKTXLBFbKZ5V8QVrGo5bk2Sxd7DlDsKY9D3", overwrite=TRUE)
 library(janitor)
 library(lubridate)
 library(htmltools)
@@ -139,19 +139,34 @@ wsp_joined$zip <- as.character(wsp_joined$zip)
 ```
 
 ```{r}
-wsp_joined |>
+write.csv(wsp_joined, "wsp_joined.csv", row.names = FALSE)
+```
+
+**creating dataframe of summary tables of WSP data**
+
+```{r}
+wsp_zips_by_state <- wsp_joined |>
   group_by(state) |>
-  summarize(count_of_zip = n()) |>
-  arrange(desc(total_claimants))
+  summarize(zip_codes_with_claimant = n()) |>
+  arrange(desc(zip_codes_with_claimant))
 ```
 ```{r}
-wsp_joined |>
+wsp_recipients_by_state <- wsp_joined |>
   group_by(state) |>
   summarize(total_recipients = sum(number_of_claimants)) |>
   arrange(desc(total_recipients))
 ```
 
+```{r}
+wsp_summary_combined <- left_join(wsp_zips_by_state, wsp_recipients_by_state, by="state")
+```
 
+```{r}
+write.csv(wsp_summary_combined, "wsp_summary.csv", row.names=FALSE)
+```
+
+
+**Northeast map of WSP by zip codes**
 ```{r}
 wsp_chart <- dw_create_chart()
 ```
@@ -164,14 +179,14 @@ dw_data_to_chart(wsp_joined, wsp_chart)
 dw_edit_chart(wsp_chart, type = "d3-maps-choropleth",
               visualize = list(
                 basemap="northeast-zip"
-              ), title="Baltimore, Anne Arundel County residents make up majority of Worker Support Program claims", intro="Maryland created the Worker Support Program in the wake of teh Key Bridge collapse. The program provided temporary relief to Port of Baltimore workers. The 3,363 approved applicants received weekly $430 payments. Workers from 11 states received money from the program. Maryland made up the overwhelming majority with 3,259 workers. Pennsylvannia (63), Delaware (15) and Virginia (14) each had more than 10. At least one worker in further away states like Washington, Florida, Minnestota and Georgia received money, too.", source_name="Maryland Dept. of Labor", byline="Matt Cohen")
+              ), title="Baltimore, Anne Arundel County residents make up majority of Worker Support Program claims", intro="Maryland created the Worker Support Program in the wake of the Key Bridge collapse. The program provided temporary relief to Port of Baltimore workers. The 3,363 approved applicants received weekly $430 payments. Workers from 11 states received money from the program. Maryland made up the overwhelming majority with 3,259 workers. Pennsylvannia (63), Delaware (15) and Virginia (14) each had more than 10. At least one worker in further away states like Washington, Florida, Minnestota and Georgia received money, too.", source_name="Maryland Dept. of Labor", byline="Matt Cohen")
 ```
 
 ```{r}
 dw_publish_chart(wsp_chart)
 ```
 
-**More geo WSP maps**
+**Southeast WSP map**
 
 ```{r}
 south_wsp_chart <- dw_create_chart()
@@ -185,5 +200,27 @@ dw_data_to_chart(wsp_joined, south_wsp_chart)
 dw_edit_chart(south_wsp_chart, type="d3-maps-choropleth", visualize = list(
                 basemap="south-zip"
               ), )
+```
+
+**bullet bar chart for summary table**
+
+```{r}
+bullet_chart <- dw_create_chart()
+```
+
+```{r}
+dw_data_to_chart(wsp_summary_combined, bullet_chart)
+```
+
+```{r}
+dw_edit_chart(bullet_chart, type="d3-bars-bullet", byline="Matt Cohen", source_name = "Maryland Department of Labor", title="WSP claims by state, zip codes per state")
+```
+
+```{r}
+dw_retrieve_chart_metadata(bullet_chart)
+```
+
+```{r}
+dw_publish_chart(bullet_chart)
 ```
 
