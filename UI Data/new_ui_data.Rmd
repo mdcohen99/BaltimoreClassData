@@ -65,6 +65,7 @@ view(dw_basemaps)
 
 ```{r}
 dw_edit_chart(map, 
+              title = "Which Maryland zip codes has the most unemployment filings over the last year?", intro = "From April 2024 through February 2025, zip code 21222 — the main zip code for Dundalk, located just outside the Baltimore city line and at the foot of the Key Bridge — had the third most highest unemployment insurance claims of any zip code in the state.", byline = "Matt Cohen", source_name = "Maryland Dept. of Labor",
               axes = list(
                 values = "count"
                 ), 
@@ -86,7 +87,7 @@ HTML(iframe_code)
 **Adding weekly county-level UI data**
 
 ```{r}
-counties_ui_raw <- read_csv("filtered_ui_counties.csv") |> clean_names()
+counties_ui_raw <- read_csv("storage/filtered_ui_counties.csv") |> clean_names()
 ```
 
 ```{r}
