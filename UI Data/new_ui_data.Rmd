@@ -42,9 +42,16 @@ combined_data <- left_join(ui_data, locations, by="zip")
 
 ```{r}
 ui_pivot <- combined_data |>
-  group_by(zip, primary_city) |>
+  group_by(zip, primary_city, county) |>
   summarize(count = sum(count)) |>
   arrange(desc(count)) 
+```
+
+```{r}
+combined_data |>
+  group_by(county) |>
+  summarize(total = sum(count)) |>
+  arrange(desc(total))
 ```
 
 
@@ -178,6 +185,9 @@ wsp_joined |>
   summarize(total = sum(number_of_claimants)) |>
   arrange(desc(total))
 
+```
+```{r}
+wsp_data |> summarize(total = sum(number_of_claimants))
 ```
 
 **Northeast map of WSP by zip codes**
