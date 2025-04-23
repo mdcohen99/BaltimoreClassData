@@ -96,11 +96,18 @@ HTML(iframe_code)
 
 ```{r}
 counties_ui_raw <- read_csv("storage/filtered_ui_counties.csv") |> clean_names()
+md_ui_weekly <- read_csv("storage/weekly_ui_data.csv") |> clean_names()
 ```
 
 ```{r}
-counties_ui_raw <- counties_ui_raw 
+state_median <- md_ui_weekly |>
+  group_by(week_ending) |>
+  mutate(median = median(regular_ui)) 
+  
+  write.csv(state_median, "median_udpate.csv", row.names = FALSE)
 ```
+
+
 
 **Creating county level chart**
 
@@ -180,10 +187,13 @@ wsp_joined |>
   summarize(total = sum(number_of_claimants)) |>
   arrange(desc(total))
 
-wsp_joined |>
+wsp_by_city <- wsp_joined |>
   group_by(primary_city) |>
   summarize(total = sum(number_of_claimants)) |>
   arrange(desc(total))
+
+write.csv(wsp_by_city, "wsp_by_city.csv", row.names=FALSE)
+
 
 ```
 ```{r}
