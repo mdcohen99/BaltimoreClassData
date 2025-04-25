@@ -13,7 +13,7 @@ library(htmltools)
 
 ```
 
-**Loading original data set**
+#**Loading original data set**#
 
 ```{r}
 ui_data <- read_csv("ui_data.csv") |> clean_names() 
@@ -24,7 +24,8 @@ ui_data$zip <- as.character(ui_data$zip)
 ui_data$month <- as.character(ui_data$month)
 ```
 
-**Adding location data**
+
+#**Adding location data**
 
 ```{r}
 locations <- read_csv("https://raw.githubusercontent.com/profrobwells/Baltimore/refs/heads/main/fall_2024_indep_study/data/county_zip.csv") |> clean_names() 
@@ -34,7 +35,7 @@ locations <- read_csv("https://raw.githubusercontent.com/profrobwells/Baltimore/
 locations$zip <- as.character(locations$zip)
 ```
 
-**Joining data and creating pivot table to group by zip code**
+#**Joining data and creating pivot table to group by zip code**
 
 ```{r}
 combined_data <- left_join(ui_data, locations, by="zip")
@@ -55,7 +56,7 @@ combined_data |>
 ```
 
 
-**Beginning map creation**
+#**Beginning map creation**
 
 ```{r}
 map <- dw_create_chart(type = "d3-maps-choropleth", title = "Unemployment stats"
@@ -92,7 +93,7 @@ iframe_code <- '<iframe src="https://datawrapper.dwcdn.net/Jhbsf/1/" width="100%
 HTML(iframe_code)
 ```
 
-**Adding weekly county-level UI data**
+#**Adding weekly county-level UI data**
 
 ```{r}
 counties_ui_raw <- read_csv("storage/filtered_ui_counties.csv") |> clean_names()
@@ -109,7 +110,7 @@ state_median <- md_ui_weekly |>
 
 
 
-**Creating county level chart**
+#**Creating county level chart**
 
 ```{r}
 weekly_ui_line <- dw_create_chart()
@@ -133,7 +134,7 @@ iframe_code <- '<iframe src="https://datawrapper.dwcdn.net/YGqTg/1/" width="100%
 HTML(iframe_code)
 ```
 
-**WORKING WITH WORKER SUPPORT PROGRAM DATA**
+#**WORKING WITH WORKER SUPPORT PROGRAM DATA**
 
 ```{r}
 wsp_data <- read_csv("worker_support_data.csv") |> clean_names() 
@@ -158,7 +159,7 @@ wsp_joined$zip <- as.character(wsp_joined$zip)
 write.csv(wsp_joined, "wsp_joined.csv", row.names = FALSE)
 ```
 
-**creating dataframe of summary tables of WSP data**
+#**creating dataframe of summary tables of WSP data**
 
 ```{r}
 wsp_zips_by_state <- wsp_joined |>
@@ -200,7 +201,7 @@ write.csv(wsp_by_city, "wsp_by_city.csv", row.names=FALSE)
 wsp_data |> summarize(total = sum(number_of_claimants))
 ```
 
-**Northeast map of WSP by zip codes**
+#**Northeast map of WSP by zip codes**
 ```{r}
 wsp_chart <- dw_create_chart()
 ```
@@ -220,7 +221,7 @@ dw_edit_chart(wsp_chart, type = "d3-maps-choropleth",
 dw_publish_chart(wsp_chart)
 ```
 
-**Southeast WSP map**
+#**Southeast WSP map**
 
 ```{r}
 south_wsp_chart <- dw_create_chart()
@@ -236,7 +237,7 @@ dw_edit_chart(south_wsp_chart, type="d3-maps-choropleth", visualize = list(
               ), )
 ```
 
-**bullet bar chart for summary table**
+#**bullet bar chart for summary table**#
 
 ```{r}
 bullet_chart <- dw_create_chart()

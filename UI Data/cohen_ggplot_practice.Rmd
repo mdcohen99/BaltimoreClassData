@@ -1,0 +1,124 @@
+---
+title: "Cohen DataViz R Assignment"
+name: Matt Cohen 
+---
+
+```{r}
+library(tidyverse)
+library(scales)
+library(treemapify)
+library(RColorBrewer)
+library(svglite)
+library(showtext)
+library(janitor)
+library(lubridate)
+```
+#**BEGIN LINE CHART**
+```{r}
+raw_ui_data <- read_csv("storage/weekly_ui_data.csv") |> clean_names()
+filtered_ui_counties <- read_csv("storage/filtered_ui_counties.csv") |> clean_names()
+```
+```{r}
+filtered_ui_counties <- filtered_ui_counties |>
+  pivot_longer(
+    cols = -week_ending,  
+    names_to = "county", 
+    values_to = "claims" 
+  ) 
+```
+```{r}
+year <- 2024
+
+filtered_ui_counties <- filtered_ui_counties |> 
+  mutate(
+    week_ending_trimmed = str_trim(week_ending),
+    date_string = paste(week_ending_trimmed, year),
+    week_ending_date = mdy(date_string)
+  )
+
+highlight_start <- as.Date("2024-03-23")
+highlight_end   <- as.Date("2024-03-30")
+```
+
+**i used Gemini a bit here because the lubridate was being an absolute pain in the ass. Gemini helped me find some errors in the data formatting that wasn't letting me make the week_ending column into a date. because ggplot thought it was just a character, it was organizing the data in alphabetical not chronological order**
+```{r}
+font_add_google("Montserrat", "montserrat")
+
+showtext_auto()
+
+ggplot(filtered_ui_counties, aes(x = week_ending_date, y = claims, color = county, group = county)) +
+  geom_line(linewidth = 1) + 
+  scale_color_manual(values = c("anne_arundel" = "#0BFFFF",
+                                  "baltimore" = "#00F780",
+                                  "baltimore_city" = "#005F60")) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b %d") +
+  annotate(
+    "rect", xmin=highlight_start, xmax=highlight_end, ymin=-Inf, ymax=Inf, fill="darkgreen", alpha=0.3
+  ) +
+  theme_minimal() +
+  labs(
+    title="Maryland counties near the Key Bridge saw year's biggest spike in unemployment claims over the week of the collapse",
+    subtitle="Experts in the Baltimore area say there was a clear connection between the collapse of the Key Bridge and unemplyoment. Maryland created its Worker Support Program in addition to traditional unemployment insurance. Maryland Department of Labor data showed an increase in UI claims specifically mentioning or relating to Key Bridge fallout.",
+    caption="Source: Maryland Department of Labor, Chart by: Matt Cohen"
+  ) +
+  theme(axis.title = element_blank(),
+        plot.title = element_text(family="montserrat", face="bold"),
+        plot.subtitle = element_text(family = "montserrat", face="italic"),
+        axis.text = element_text(family = "montserrat"),
+        plot.caption = element_text(family = "montserrat"), legend.title = element_text(family="montserrat"), legend.text = element_text(family="montserrat"))
+  
+```
+**END LINE CHART**
+#**BEGIN BAR CHART**
+```{r}
+wsp_data <- read_csv("worker_support_data.csv") |> clean_names() 
+
+wsp_data <- wsp_data |> rename(zip = zip_code)
+wsp_data$zip <- as.character(wsp_data$zip)
+
+zip_database <- read_csv("zip_code_database.csv")
+
+wsp_joined <- left_join(wsp_data, zip_database, by="zip")
+
+wsp_joined$zip <- as.character(wsp_joined$zip)
+
+wsp_joined <- wsp_joined |> select(primary_city, county, zip, number_of_claimants) |> arrange(desc(number_of_claimants)) |> top_n(10, number_of_claimants)
+```
+```{r}
+ggplot(wsp_joined, aes(x = reorder(zip, -number_of_claimants), y = number_of_claimants, fill=county)) +
+  geom_col() +
+  scale_x_discrete(guide = guide_axis(angle = 45)) +
+  labs(x="Zip Code", y="Number of Claimants", title="Dundalk zip code 21222 had 119 more Worker Support Program claimants than any other city", subtitle="Seven Baltimore County zip codes ended up in the top 10 for most Worker Support Program Claims.", caption = "Source= Maryland Department of Labor, Chart by Matt Cohen") +
+theme_minimal() +
+theme(axis.title = element_text(family="montserrat"), plot.title = element_text(family="montserrat", face="bold"), plot.subtitle = element_text(family = "montserrat", face="italic"), axis.text = element_text(family = "montserrat"), plot.caption = element_text(family = "montserrat"), legend.title = element_text(family="montserrat"), legend.text = element_text(family="montserrat"))
+```
+**End Bar Chart**
+#**BEGIN TREE MAP**
+```{r}
+bcf_data <- read_csv("bcf_data.csv") |> clean_names()
+```
+```{r}
+bcf_data <- bcf_data |> mutate(equal_area = 1) |> filter(total == "$16 million+ in donations") 
+
+ggplot(bcf_data, aes(area = equal_area, fill = amount, label = donor_name)) +
+  geom_treemap() +
+  geom_treemap_text(
+      color = "white",          
+      size = 10,                
+      grow = FALSE,             
+      reflow = TRUE,             
+      min.size = 0, 
+      family="montserrat"
+   ) +
+  scale_fill_brewer(palette = "Set2") + 
+  labs(
+    title = "Who donated to the Baltimore Community Foundation's Maryland Tough Baltimore Strong fund?",
+    subtitle = "The Maryland Tough Baltimore Strong fund organized by the BCF was meant to provide further direct relief to individuals who lost their jobs and impacted small businesses from the Key Bridge collapse. The BCF's fundraising brought in more than $16 million which has all been allocated to the groups listed here among others, according to its website who contributed up to $4,000. The Baltimore Banner reported none of the funding was distributed to families of the construction workers killed in the Key Bridge collapse despite initially promising to do so. ", fill = "Donation Level"
+  ) +
+  theme_minimal() + 
+  theme(legend.position = "bottom") +
+  theme(axis.title = element_text(family="montserrat"), plot.title = element_text(family="montserrat", face="bold"), plot.subtitle = element_text(family = "montserrat", face="italic"), axis.text = element_text(family = "montserrat"), plot.caption = element_text(family = "montserrat"), legend.title = element_text(family="montserrat"), legend.text = element_text(family="montserrat")) 
+
+```
+NOTE: Basically I wanted to create a display all of all the donors, Gemini gave me the idea to add the equal area column so that i didn't have to reformat the numbers to actually be numbers since I wanted them as characters 
+

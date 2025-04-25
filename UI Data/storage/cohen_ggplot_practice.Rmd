@@ -1,0 +1,78 @@
+---
+title: "Cohen DataViz R Assignment"
+name: Matt Cohen 
+---
+
+```{r}
+library(tidyverse)
+library(scales)
+library(treemapify)
+library(RColorBrewer)
+library(svglite)
+library(showtext)
+library(janitor)
+library(lubridate)
+```
+**BEGIN LINE CHART**
+```{r}
+raw_ui_data <- read_csv("weekly_ui_data.csv") |> clean_names()
+filtered_ui_counties <- read_csv("filtered_ui_counties.csv") |> clean_names()
+```
+```{r}
+filtered_ui_counties <- filtered_ui_counties |>
+  pivot_longer(
+    cols = -week_ending,  
+    names_to = "county", 
+    values_to = "claims" 
+  ) 
+```
+```{r}
+year <- 2024
+
+filtered_ui_counties <- filtered_ui_counties |> 
+  mutate(
+    week_ending_trimmed = str_trim(week_ending),
+    date_string = paste(week_ending_trimmed, year),
+    week_ending_date = mdy(date_string)
+  )
+
+highlight_start <- as.Date("2024-03-23")
+highlight_end   <- as.Date("2024-03-30")
+```
+
+**i used Gemini a bit here because the lubridate was being an absolute pain in the ass. Gemini helped me find some errors in the data formatting that wasn't letting me make the week_ending column into a date. because ggplot thought it was just a character, it was organizing the data in alphabetical not chronological order**
+```{r}
+font_add_google("Montserrat", "montserrat")
+
+showtext_auto()
+
+ggplot(filtered_ui_counties, aes(x = week_ending_date, y = claims, color = county, group = county)) +
+  geom_line(linewidth = 1) + 
+  scale_color_manual(values = c("anne_arundel" = "#0BFFFF",
+                                  "baltimore" = "#00F780",
+                                  "baltimore_city" = "#005F60")) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b %d") +
+  annotate(
+    "rect", xmin=highlight_start, xmax=highlight_end, ymin=-Inf, ymax=Inf, fill="darkgreen", alpha=0.3
+  ) +
+  theme_minimal() +
+  labs(
+    title="Maryland counties near the Key Bridge saw year's biggest spike in unemployment claims over the week of the collapse",
+    subtitle="Experts in the Baltimore area say there was a clear connection between the collapse of the Key Bridge and unemplyoment. Maryland created its Worker Support Program in addition to traditional unemployment insurance. Maryland Department of Labor data showed an increase in UI claims specifically mentioning or relating to Key Bridge fallout.",
+    caption="Source: Maryland Department of Labor, Chart by: Matt Cohen"
+  ) +
+  theme(axis.title = element_blank(),
+        plot.title = element_text(family="montserrat", face="bold"),
+        plot.subtitle = element_text(family = "montserrat", face="italic"),
+        axis.text = element_text(family = "montserrat"),
+        plot.caption = element_text(family = "montserrat"))
+  
+```
+**END LINE CHART**
+
+**
+
+
+
+
+
