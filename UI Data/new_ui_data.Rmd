@@ -214,7 +214,7 @@ dw_data_to_chart(wsp_joined, wsp_chart)
 dw_edit_chart(wsp_chart, type = "d3-maps-choropleth",
               visualize = list(
                 basemap="maryland-zip-codes-2020"
-              ), title="Baltimore, Anne Arundel County residents make up majority of Worker Support Program claims", intro="Maryland created the Worker Support Program in the wake of the Key Bridge collapse. The program provided temporary relief to Port of Baltimore workers. The 3,363 approved applicants received weekly $430 payments. Workers from 11 states received money from the program. Maryland made up the overwhelming majority with 3,259 workers. Pennsylvannia (63), Delaware (15) and Virginia (14) each had more than 10. At least one worker in further away states like Washington, Florida, Minnestota and Georgia received money, too.", source_name="Maryland Dept. of Labor", byline="Matt Cohen")
+              ), title="Baltimore, Anne Arundel County residents make up majority of Worker Support Program claims", intro="Maryland created the Worker Support Program in the wake of the Key Bridge collapse. The program provided temporary relief to Port of Baltimore workers. The 3,363 approved applicants received weekly $430 payments. Workers from 11 states received money from the program. Maryland made up the overwhelming majority with 3,259 workers. Pennsylvannia (63), Delaware (15) and Virginia (14) each had more than 10. At least one worker in further away states like Washington, Florida, Minnestota and Georgia received money, too.", source_name="Maryland Dept. of Labor", byline="Matt Cohen", "custom-font"="Google Fonts:Source Serif 4")
 ```
 
 ```{r}
